@@ -27,6 +27,11 @@
             android:name=".presentation.CoinDetailActivity"
             android:exported="true">
         </activity>
+        <provider
+            android:authorities="androidx.work.WorkManagerInitializer"
+            android:name="androidx.startup.InitializationProvider"
+            tools:replace="android:authorities"
+            tools:node="remove"/>
     </application>
 
 </manifest>
